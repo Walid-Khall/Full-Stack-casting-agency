@@ -267,7 +267,5 @@ https://casting-agency-app-capstone.herokuapp.com/
 Go to the 
 Click on Login / sing in with Google / use another account
 enter the following credentials  which has been designated with Executive Producer role:
-   Email: testcapstoneud@gmail.com
-   Password: 2020$test
 
 
