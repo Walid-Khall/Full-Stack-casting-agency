@@ -1,0 +1,38 @@
+{% extends 'layouts/main.html' %}
+{% block title %}Moulin{% endblock %}
+{% block content %}
+<div class="row">
+	<div class="col-sm-6">
+		<h1>Moulin Rouge 🔥</h1>
+		<p class="lead">The parisien casting agency.</p>
+		<h3>
+			<a href="/movies"><button class="btn btn-primary btn-lg">Find a movie</button></a>
+			<a href="/movies/create"><button class="btn btn-default btn-lg">Add a movie</button></a>
+		</h3>
+		<h3>
+			<a href="/actors"><button class="btn btn-primary btn-lg">Find an actor</button></a>
+			<a href="/actors/create"><button class="btn btn-default btn-lg">add an actor</button></a>
+		</h3>
+	</div>
+	<div class="col-sm-6 hidden-sm hidden-xs">
+		<img id="front-splash" src="{{ url_for('static',filename='img/front-splash.jpg') }}" alt="Front Photo of Musical Band" />
+	</div>
+</div>
+
+<script type="text/javascript">
+
+	var params = {}
+	var meh = window.location.hash.substring(1)
+	meh.split('&').map(hk => { 
+    	let temp = hk.split('='); 
+    	params[temp[0]] = temp[1] 
+	});
+	if (params.access_token) {
+		var date = new Date();
+		date.setTime(date.getTime() + (params.expires_in * 1000));
+		document.cookie = `user_token=${params.access_token}; expires=${date.toGMTString()}`;
+		console.log(params.expires_in)
+	}
+  
+</script>
+{% endblock %}
