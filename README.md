@@ -11,7 +11,7 @@ Actors with attributes name, age and gender
 @app.errorhandler decorators were used to format error responses as JSON objects. Custom @requires_auth decorator were used for Authorization based
 on roles of the user. 
 
-#### GET /actors 
+### GET /actors 
 
 Returns a list of all the movies and a success value.
 
@@ -262,7 +262,7 @@ The app is hosted live on heroku at the URL:
 
 https://casting-agency-app-capstone.herokuapp.com/
 
-### test the application live
+### Test the application live
 
 Go to the 
 Click on Login / sing in with Google / use another account
