@@ -212,7 +212,7 @@ The `--reload` flag will detect file changes and restart the server automaticall
 
 # URL where the application is hosted
 
-https://udacity-fsdn-capstone-project.herokuapp.com/
+https://casting-agency-app-capstone.herokuapp.com/
 
 
 ### Setup Auth0 here is the access tokens 
